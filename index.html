@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Darling 🥳🫶</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Floating Background Particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1 class="typewriter" id="typewriter">Happy Birthday, Beautiful 💕</h1>
+            <p class="subtitle fade-in">Today is all about celebrating you, darling, and the joy you bring to everyone's life.</p>
+            <div class="floating-hearts">
+                <div class="hearts">🩷</div>
+                <div class="hearts">💖</div>
+                <div class="hearts">💘</div>
+                <div class="hearts">💝</div>
+                <div class="hearts">❤️</div>
+            </div>
+            <button class="cta-button" onclick="scrollToSection('gallery')">
+                Start the Celebration 🥳
+            </button>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Our Memories</h2>
+            <div class="gallery-grid">
+
+                <div class="photo-card" data-aos="fade-up" data-delay="100">
+                    <div class="photo-container">
+                        <img src="myphoto.JPG" alt="my photo">
+                        <div class="photo-overlay">
+                            <div class="photo-caption">Every moment with you is magical</div>
+                            <button class="like-btn" onclick="toggleLike(this)">
+                                <span class="heart-icon">🤍</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-card" data-aos="fade-up" data-delay="200">
+                    <div class="photo-container">
+                        <img src="our_first_movie_together.JPG" alt="Sweet Memory">
+                        <div class="photo-overlay">
+                            <div class="photo-caption">Our First Movie Together 🥹</div>
+                            <button class="like-btn" onclick="toggleLike(this)">
+                                <span class="heart-icon">🤍</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-card" data-aos="fade-up" data-delay="300">
+                    <div class="photo-container">
+                        <img src="IMG_20251106_223122_739.JPG" alt="My Beautiful Darling">
+                        <div class="photo-overlay">
+                            <div class="photo-caption">Your Beauty is Unmatched 🫶</div>
+                            <button class="like-btn" onclick="toggleLike(this)">
+                                <span class="heart-icon">🤍</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-card" data-aos="fade-up" data-delay="400">
+                    <div class="photo-container">
+                        <img src="Movie_Night.JPG" alt="My Favourite Nights">
+                        <div class="photo-overlay">
+                            <div class="photo-caption">I love Watching Movies With You 🥰</div>
+                            <button class="like-btn" onclick="toggleLike(this)">
+                                <span class="heart-icon">🤍</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-card" data-aos="fade-up" data-delay="500">
+                    <div class="photo-container">
+                        <img src="thedaymydreamscametrue.JPG" alt="The Day My Dreams Came True">
+                        <div class="photo-overlay">
+                            <div class="photo-caption">The Greatest Day Of My Life 🥲</div>
+                            <button class="like-btn" onclick="toggleLike(this)">
+                                <span class="heart-icon">🤍</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-card" data-aos="fade-up" data-delay="600">
+                    <div class="photo-container">
+                        <img src="youramazingbf.JPG" alt="Your Amazing Darling">
+                        <div class="photo-overlay">
+                            <div class="photo-caption">Your Amazing Darling 😁</div>
+                            <button class="like-btn" onclick="toggleLike(this)">
+                                <span class="heart-icon">🤍</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Birthday Message Section -->
+    <section class="message-section" id="message">
+        <div class="container">
+            <div class="message-card">
+                <h2 class="message-title">A Special Message For You Sweetheart</h2>
+                <div class="message-content">
+                    <p class="message-text fade-in-text">
+                        On this special day, I want you to know how grateful I am to have you in my life.
+                        Your laughter fills my days with joy, your love gives me strength to keep going forwards,
+                        and your presence makes everything better. You are not just my Darling, you are my best friend,
+                        my partner in crime, and the love of my life.
+                    </p>
+                    <p class="message-text fade-in-text">
+                        Today, we celebrate you - your kindness, your beauty, your amazing soul and
+                        all the wonderful things that make you uniquely you. I hope this new year of your
+                        life brings you endless happiness, incredible adventures, and all your dreams come true.
+                    </p>
+                    <p class="message-text fade-in-text">
+                        Happy Birthday, my Sweetheart! Here's to many more years of laughter, love, and beautiful memories together 💞
+                    </p>
+                </div>
+                <div class="message-hearts">
+                    <span class="heart-animation">💖</span>
+                    <span class="heart-animation">💝</span>
+                    <span class="heart-animation">💕</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; made with 🩷 for the most amazing person in the world</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+</body>
+</html>
