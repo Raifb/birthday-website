@@ -232,21 +232,17 @@ body {
 }
 
 .photo-container {
-    position: relative;
+    display: inline-block;      /* container shrinks/grows to image size */
     border-radius: 20px;
     overflow: hidden;
-    background-color: #f8f8f8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background: #ffffff;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
 .photo-container img {
-    width: 100%;
-    height: auto;       /* Adjust height automatically to maintain aspect ratio */
-    object-fit: contain; /* Ensures full image is visible */
+    width: 100%;       /* scales responsively */
+    height: auto;      /* keeps aspect ratio */
     display: block;
-    transition: transform 0.5s ease;
     border-radius: inherit;
 }
 
@@ -405,4 +401,5 @@ body {
     .hero-content { padding: 0 15px; }
     .cta-button { padding: 12px 24px; font-size: 1rem; }
     .section-title { margin-bottom: 40px; }
+
 }
